@@ -24,27 +24,41 @@
     <div class="container">
       <nav class="nav-menu">
         <div class="row">
-          <ul class="menu list-inline col-md-6 col-sm-12">
-            <li><a class="active" href="#">Главная</a></li>
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Оплата</a></li>
-            <li><a href="#">Еще</a></li>
-          </ul>
+          <div class="col-md-6 col-sm-12">
+            <ul class="menu list-inline">
+              <li><a class="active" href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li class="more">
+                <a href="#">Еще</a>
+                <ul class="submenu">
+                  <li><a class="subdotted" href="#">Помощь покупателю</a></li>
+                  <li><a class="subdotted" href="#">Возврат товара</a></li>
+                  <li><a class="subdotted" href="#">Отзывы</a></li>
+                  <li><a href="#">Доставка</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
           <div class="col-md-3 col-sm-6">
             <form class="search-form">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="ПОИСК ПО КАТАЛОГУ...">
+                <input type="text" class="form-control" placeholder="ПОИСК ПО КАТАЛОГУ..." minlength="2" maxlength="50" required>
                 <span class="input-group-btn">
-                  <button class="btn btn-link" type="submit"><img src="bootstrap/img/home page/search.png"></button>
+                  <button class="btn btn-link" type="submit"><img src="bootstrap/img/home-page/search.png"></button>
                 </span>
               </div>
             </form>
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="btn-group btn-group-lg cart-btns" aria-label="...">
-              <button class="btn btn-lg btn-default"><img src="bootstrap/img/home page/cart2.png"> Моя корзина</button>
+              <button type="button" class="btn btn-lg btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="bootstrap/img/home-page/cart.png"> Моя корзина</button>
+              <div class="dropdown-menu">
+                <li><a href="#">Dropdown link</a></li>
+                <li><a href="#">Dropdown link</a></li>
+              </div>
               <button class="btn btn-lg btn-default">Вход</button>
             </div>
           </div>

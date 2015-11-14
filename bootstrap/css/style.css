@@ -13,6 +13,7 @@ body {
   margin-right: 24px;
 }
 .menu > li > a {
+  position: relative;
   color: #111;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
@@ -21,7 +22,7 @@ body {
   display: block;
   text-transform: uppercase;
 }
-.menu > li > a:hover {
+.menu > li:hover > a {
   color: #94643d;
   text-decoration: none;
   padding-bottom: 30px;
@@ -31,6 +32,33 @@ body {
   color: #94643d;
   padding-bottom: 30px;
   border-bottom: 2px solid #94643d;
+}
+.menu > li.more:hover .submenu {
+  display: block;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  right: -140px;
+  display: none;
+  margin-right: -140px;
+  min-width: 260px;
+  padding: 20px 35px 10px;
+  margin: 0;
+  list-style: none;
+  font-size: 14px;
+  -webkit-box-shadow: 0 2px 12px rgba(0,0,0,0.175);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.175);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.submenu > li > a {
+  color: #333;
+  display: block;
+  padding: 10px;
+}
+.subdotted {
+  border-bottom: 1px dotted #e5e5e5;
 }
 
 /* Search Form */
@@ -48,7 +76,36 @@ body {
   margin-top: 17px;
   float: right;
 }
-.cart-btns .btn-group-lg {
-  border: 1px dotted #e5e5e5; 
-  border-radius: 5px; 
+.cart-btns .btn {
+  border: 1px dashed #58585a;
+  border-radius: 10px;
+}
+.cart-btns > .btn {
+  padding: 10px 10px;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2.3333333;
+  text-transform: uppercase;
+}
+
+.cart-btns > .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,0.15);
+  -webkit-box-shadow: 0 2px 12px rgba(0,0,0,0.175);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.175);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
