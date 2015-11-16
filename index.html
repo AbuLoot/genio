@@ -11,7 +11,7 @@
 
     <title>Genio.kz</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="bootstrap/css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -34,9 +34,9 @@
               <li class="more">
                 <a href="#">Еще</a>
                 <ul class="submenu">
-                  <li><a class="subdotted" href="#">Помощь покупателю</a></li>
-                  <li><a class="subdotted" href="#">Возврат товара</a></li>
-                  <li><a class="subdotted" href="#">Отзывы</a></li>
+                  <li><a class="sub-dotted" href="#">Помощь покупателю</a></li>
+                  <li><a class="sub-dotted" href="#">Возврат товара</a></li>
+                  <li><a class="sub-dotted" href="#">Отзывы</a></li>
                   <li><a href="#">Доставка</a></li>
                 </ul>
               </li>
@@ -54,18 +54,181 @@
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="btn-group btn-group-lg cart-btns" aria-label="...">
-              <button type="button" class="btn btn-lg btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="bootstrap/img/home-page/cart.png"> Моя корзина</button>
-              <div class="dropdown-menu">
-                <li><a href="#">Dropdown link</a></li>
-                <li><a href="#">Dropdown link</a></li>
-              </div>
+              <button type="button" class="btn btn-lg btn-default my-cart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="bootstrap/img/home-page/cart.png"> Моя корзина
+              </button>
               <button class="btn btn-lg btn-default">Вход</button>
+              <!-- <div class="dropdown-cart pull-right">
+                <h4 class="solid-sub-line cart-title">У вас <span class="text-primary">(3 шт.)</span> товара в корзине</h4>
+                <div class="media solid-sub-line ">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" style="width:100px; height:auto" src="bootstrap/img/product-catalog/images/images_4.png">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <a href="#"><b>Roberto Botticelli</b></a>
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </h6>
+                    <b><span class="text-muted">2</span> x 40 000 тг</b>
+                  </div>
+                </div>
+                <div class="media solid-sub-line">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" style="width:100px; height:auto" src="bootstrap/img/product-catalog/images/images_1_1.png">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h6 class="media-heading">
+                      <a href="#"><b>John Galliano</b></a>
+                      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </h6>
+                    <b><span class="text-muted">2</span> x 39 000 тг</b>
+                  </div>
+                </div>
+                <h4 class="text-center products-total"><small>Товары на</small> 118 000 тг.</h4>
+                <button class="btn btn-block btn-lg btn-black" type="submit">КОРЗИНА</button>
+                <button class="btn btn-block btn-lg btn-outline" type="submit">ПРОВЕРИТЬ</button>
+              </div> -->
             </div>
           </div>
         </div>
       </nav>
-    </div>    
+      <header class="row header">
+        <div class="col-md-5">
+          <a class="logo pull-left" href="#"><img src="bootstrap/img/home-page/logo_genio.png"></a>
+          <h5 class="contact-us pull-right"><img src="bootstrap/img/home-page/contact.png"> Свяжитесь с нами</h5>
+        </div>
+        <div class="col-md-7 season">
+          <a href="#" class="col-md-3">
+            <img src="bootstrap/img/home-page/vesna_icon.png">
+            <p class="text-center">Весна</p>
+          </a>
+          <a href="#" class="col-md-3">
+            <img src="bootstrap/img/home-page/leto_icon.png">
+            <p class="">Лето</p>
+          </a>
+          <a href="#" class="col-md-3">
+            <img src="bootstrap/img/home-page/osen'_icon.png">
+            <p class="">Осень</p>
+          </a>
+          <a href="#" class="col-md-3">
+            <img src="bootstrap/img/home-page/zima_icon.png">
+            <p class="">Зима</p>
+          </a>
+        </div>
+      </header>
 
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="bootstrap/img/home-page/banner_home.png" alt="...">
+            <div class="carousel-caption">
+              <p>Скидка на -20% на новую коллекцию от Genio.kz</p>
+              <h1>Новая зимняя коллекция</h1>
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <!-- <img src="bootstrap/img/home-page/Charts/arraw_nazad.png"> -->
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <!-- <img src="bootstrap/img/home-page/Charts/arraw_vpered.png"> -->
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="row advantages">
+        <section class="col-md-4">
+          <img class="pull-left" src="bootstrap/img/home-page/besplatnya_dostavka_icon.png">
+          <h5>Бесплатная<br> экспресс-доставка</h5>
+        </section>
+        <section class="col-md-4">
+          <img class="pull-left" src="bootstrap/img/home-page/primerka_icon.png">
+          <h5>Примеряйте и оплачивайте только подходящие товары</h5>
+        </section>
+        <section class="col-md-4">
+          <img class="pull-left" src="bootstrap/img/home-page/oplata_icon.png">
+          <h5>Оплата наличными<br> в момент доставки</h5>
+        </section>
+      </div>
+      <div class="row offers">
+        <section class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="text-center">
+                <img src="bootstrap/img/home-page/sale_icon.png">
+                Акции
+              </h3>
+            </div>
+            <img class="img-responsive" src="bootstrap/img/product-catalog/images/images_5.png">
+          </div>
+        </section>
+        <section class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="text-center">
+                <img src="bootstrap/img/home-page/rasprodazha_icon.png">
+                Распрадажа
+              </h3>
+            </div>
+            <img class="img-responsive" src="bootstrap/img/product-catalog/images/images_8.png">
+          </div>
+        </section>
+        <section class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="text-center">
+                <img src="bootstrap/img/home-page/posledni_razmer.png">
+                Последний размер
+              </h3>
+            </div>
+            <img class="img-responsive" src="bootstrap/img/product-catalog/images/images_2.png">
+          </div>
+        </section>
+      </div>
+
+      <br><br><br><br>
+
+      <h1 class="text-center text-uppercase"><span class="glyphicon glyphicon-cog"></span> В разработке</h1>
+      <!-- <div class="row brands">
+        <div class="col-md-2">
+          <img class="center-block" src="bootstrap/img/home-page/logo-brands/logo_01.png">
+        </div>
+        <div class="col-md-2">
+          <br><br>
+          <img class="center-block" src="bootstrap/img/home-page/logo-brands/logo_02.png">
+        </div>
+        <div class="col-md-4">
+          <img class="center-block" src="bootstrap/img/home-page/logo-brands/logo_03.png">
+        </div>
+        <div class="col-md-2">
+          <br><br>
+          <img class="center-block" src="bootstrap/img/home-page/logo-brands/logo_04.png">
+        </div>
+        <div class="col-md-2">
+          <img class="center-block" src="bootstrap/img/home-page/logo-brands/logo_05.png">
+        </div>
+      </div> -->
+    </div>
+
+    <br><br><br><br>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+      </div>
+    </footer>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
